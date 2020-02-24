@@ -57,9 +57,9 @@ function legend() {
         var mags = ["0-1", "1-2", "2-3", "3-4", "4-5", "5+"]
         var color = ["blue", "green", "greenyellow", "yellow", "orange", "red"]
         for (var i = 0; i < mags.length; i++) {
-            var list = L.domUtil.create("li", "", ul)
-            list.innerHMTML = "<div class='container' style='background-color:" + color(i)
-            "'></div>" + labels[i]
+            var list = L.DomUtil.create("li", "", ul)
+            list.innerHMTML = "<div class='container' style='background-color:" + color[i]
+            "'></div>" + mags[i]
         }
         return div
     }
